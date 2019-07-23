@@ -54,3 +54,8 @@ connect_to_mongo(){
     mongo <ADDRESS>:<PORT>/admin --username admin --password <SECRET>;
 }
 export -f connect_to_mongo
+
+git_remove_merged(){
+    git branch --no-color --merged | command grep -vE "^(\*|\s*(master|develop|dev)\s*$)" | command xargs -n 1 git branch -d
+}
+export -f git_remove_merged
