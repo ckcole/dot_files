@@ -1,0 +1,11 @@
+// SublimeLinter Settings - User
+{
+    "linters": {
+    "flake8": {
+        // doesn't actually seem to work
+        // "max-line-length": 120,
+        // workaround:
+        "args": ["--max-line-length", "120"],
+    }
+}
+}
