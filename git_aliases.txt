@@ -4,6 +4,6 @@ git config --global alias.ci commit
 git config --global alias.st status
 
 git config --global push.default current
-git config --global alias.bbd 'branch --sort=creatordate --sort=committername --format "%(align:40) %(refna    me:lstrip=-1) %(end)  %(align:20) %(creatordate:relative) %(end)  %(committername)"'
-git config --global alias.bbu 'branch --sort=committername --sort=creatordate --format "%(align:20) %(creatordate:relative) %(end) %(align:25) %(committername) %(end) %(refname:lstrip=-1)"'
+git config --global alias.bbd 'branch --sort=creatordate --sort=committername --format "%(align:40) %(refname:lstrip=-1) %(end)  %(align:20) %(creatordate:relative) %(end)  %(committername)"'
+git config --global alias.bbu 'branch --sort=committername --sort=creatordate --format "%(align:40) %(creatordate:relative) %(end) %(align:25) %(committername) %(end) %(refname:lstrip=-1)"'
 
