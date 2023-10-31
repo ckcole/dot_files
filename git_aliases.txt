@@ -6,4 +6,5 @@ git config --global alias.st status
 git config --global push.default current
 git config --global alias.bbd 'branch --sort=committername --sort=-creatordate --format "%(align:60) %(refname:lstrip=-1) %(end)  %(align:25) %(creatordate:relative) %(end)  %(committername)"'
 git config --global alias.bbu 'branch --sort=-creatordate --sort=committername --format "%(align:20) %(creatordate:relative) %(end) %(align:25) %(committername) %(end) %(refname:lstrip=-1)"'
-git config --global alias.clean '!git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch'
+git config --global alias.clean '!git branch --merged | grep -v "\*" | grep -v master | grep -v dev | grep -v main | xargs -n 1 git branch'
+
